@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 export default function Signup() {
   return (
     <div className="wrapper signUp">
-      <div className="illustration">
+      {/* <div className="illustration">
         <img src="https://source.unsplash.com/random" alt="illustration" />
-      </div>
+      </div> */}
       <div className="form">
-        <div className="heading">CREATE AN ACCOUNT</div>
+        <div className="heading text-xl">CREATE AN ACCOUNT</div>
         <form>
           <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Username</label>
             <input type="text" id="name" placeholder="Enter your name" />
           </div>
           <div>
@@ -20,6 +20,14 @@ export default function Signup() {
           </div>
           <div>
             <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter you password"
+            />
+          </div>
+          <div>
+            <label htmlFor="password">Password Confirmation</label>
             <input
               type="password"
               id="password"

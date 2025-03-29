@@ -8,18 +8,18 @@ const preventRefresh = (e) => {
 export default function Login() {
 	return (
 		<div className="wrapper signIn">
-			<div className="illustration">
+			{/* <div className="illustration">
 				<img src="https://source.unsplash.com/random" alt="illustration" />
-			</div>
+			</div> */}
 			<div className="form">
 				<div className="heading">LOGIN</div>
 				<form>
 					<div>
-						<label htmlFor="name">Name</label>
+						<label htmlFor="name">Username</label>
 						<input type="text" id="name" placeholder="Enter your name" />
 					</div>
 					<div>
-						<label htmlFor="e-mail">E-Mail</label>
+						<label htmlFor="e-mail">Password</label>
 						<input type="email" id="e-mail" placeholder="Enter you mail" />
 					</div>
 					<button type="submit" onClick={preventRefresh}>
