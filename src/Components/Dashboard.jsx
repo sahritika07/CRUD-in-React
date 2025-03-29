@@ -69,8 +69,9 @@ export default function UserDashboard() {
   }
 
   return (
-    <div className="dashboard">
-      <h1>User Dashboard</h1>
+    <div className="dashboard ">
+    <div className='min-h-1.5 w-2/4 bg-purple-300 justify-center flex align-middle first-letter:'>
+      <h1 className='text-green-500'>User Dashboard</h1>
       <button onClick={handleLogout}>Logout</button>
       
       <h2>Welcome, {currentUser.username}!</h2>
@@ -128,6 +129,7 @@ export default function UserDashboard() {
           ))}
         </tbody>
       </table>
+    </div>
     </div>
   );
 }
