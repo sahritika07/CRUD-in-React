@@ -3,8 +3,9 @@ import "./style.css";
 import Login from "./Components/Login.jsx";
 import Signup from "./Components/Signup.jsx";
 import Error from "./Components/Error.jsx";
-import UserDashboard from "./Components/Dashboard.jsx"; // Import the dashboard component
+// import UserDashboard from "./Components/Dashboard.jsx"; // Import the dashboard component
 import { Route, Routes, Navigate } from "react-router-dom";
+import Dashboard from "./Components/Dashboard.jsx";
 
 // Create a ProtectedRoute component to check authentication
 const ProtectedRoute = ({ children }) => {
@@ -22,7 +23,7 @@ function App() {
           path="/dashboard" 
           element={
             <ProtectedRoute>
-              <UserDashboard />
+              <Dashboard />
             </ProtectedRoute>
           } 
         />
